@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --cor01: #3D84B6;
+  --cor02: #466F8B;
+  --cor03: #2692E1;
+  --cor04: #415461;
+  --cinza-claro: #e5e5e5;
+  --cinza-texto: #666;
+
+  --fonte-padrao: "Roboto", sans-serif;
+  --fonte-secundaria: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-padrao);
+  background-color: #1e1e1e;
+  color: #000;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+header nav {
+  margin-top: 1rem;
+}
+
+header nav a {
+  color: #ccc;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  width: 300px;
+}
+
+.card-01 .card-image {
+  height: 120px;
+  background-color: var(--cinza-claro);
+  border-radius: 8px;
+}
+
+.card-content {
+  padding-top: 1rem;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.subhead {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: var(--cinza-texto);
+  margin: 0.5rem 0;
+}
+
+.title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  padding: 4px 12px;
+  border: 1px solid #aaa;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+
+.tag.active {
+  background-color: #333;
+  color: white;
+}
+
+.button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.card-02 {
+  width: 320px;
+}
+
+.card-02 .list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-02 li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.thumb {
+  width: 32px;
+  height: 32px;
+  background-color: var(--cinza-claro);
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.card-03 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 500px;
+}
+
+.card-03 .large {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+}
